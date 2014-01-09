@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'unknown'
 SITENAME = u'Zu lang für Twitter'
-SITESUBTITLE = u'Nachrichten mit Kommentaren, die mehr als 140 Zeichen lang sind'
+SITESUBTITLE = u'Alles, was man nicht in 140 Zeichen sagen kann'
 SITEURL = ''
 
 PATH = 'content'
