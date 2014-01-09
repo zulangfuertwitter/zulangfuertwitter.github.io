@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="content">
+<ol id="post-list">
+{% for article in articles_page.object_list %}
+  <li>
+    <article class="hentry">
+      <header>
+        <h3 class="entry-title">
+          <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink {{ article.title|striptags }}">{{ article.title }}</a>
+        </h3>
+      </header>
+      <div class="entry-content">{{ article.content }}</div>
+    </article>
+  </li>
+{% endfor %}
+</ol>
+{% include 'pagination.html' %}
+</section>
+{% endblock content %}
